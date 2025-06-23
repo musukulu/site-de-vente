@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: #f0f0f0;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+p {
+  margin: 20px 0;
+}
+
+.btn {
+  padding: 12px 25px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #005ac1;
+}
+
+.socials {
+  margin-top: 30px;
+}
+
+.socials a {
+  color: #222;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #0072ff;
+}
+
+footer {
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #777;
+}

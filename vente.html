@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique Ordi Pro</title>
+  <link rel="stylesheet" href="ventecs.css">
+</head>
+<!-- Notification panier -->
+<div id="notification-panier" style="display:none;"></div>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="inndex.html">ACCUEIL</a></li>
+        <li><a href="#" id="lien-panier">MON PANIER🛒</a></li>
+        <li><a href="apropos.html">À PROPOS</a></li>
+        <li><a href="aides.html">AIDES</a></li>
+      </ul>
+    </nav>
+    <h2>DECOUVREZ NOS MARQUES ET EFFECTUEZ VOTRE COMMANDE</h2>
+    <div class="barre-recherche">
+  <input type="text" id="champ-recherche" placeholder="Rechercher un ordinateur...">
+</div>
+
+
+  <div class="catalogue">
+    <!-- Exemple de carte-produit -->
+    <div class="carte-produit">
+      <h4>Apple MacBook Air</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\AIR APPLE.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Apple MacBook Air</h3>
+        <p class="prix">999,00 $</p>
+          <button class="btn-panier">Ajouter au panier🛒</button>
+         <button class="Details">
+          <a href="macbookairdetails.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Apple MacBook Pro</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\patri.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Apple MacBook Pro</h3>
+        <p class="prix">1599,00 $</p>
+          <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="macbookprodetails.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Dell XPS 13</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\ck.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Dell XPS 13</h3>
+        <p class="prix">1099,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="xps13.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Dell inspiron 15</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\dorothe.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Dell inspiron 15</h3>
+        <p class="prix">538,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="inspiron15.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>HP spectro x360</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\BENA.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>HP Spectre x360</h3>
+        <p class="prix">1879,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="spectreX360.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>HP Envy 13</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\BEN.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>HP Envy 13</h3>
+        <p class="prix">800,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="envy13.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Lenovo Thinkpad X1</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\X1CARBON.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Lenovo Thinkpad X1</h3>
+        <p class="prix">999,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="x1carbon.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Lenovo Yoga Slim 7</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\BENI.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Lenovo Yoga Slim 7</h3>
+        <p class="prix">1129,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="yogaslim7.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Asus ZenBook 14</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\ZENN.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Asus ZenBook 14</h3>
+        <p class="prix">599,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="zennbook14.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Asus ROG Zephyrus G14</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\ROG.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Asus ROG Zephyrus G14</h3>
+        <p class="prix">1600,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="asusrog.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Acer Swift 3</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\Swift3.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Acer Swift 3</h3>
+        <p class="prix">300,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="swiftf.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Acer Predator helios 300</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\PREDAA.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Acer Predator helios 300</h3>
+        <p class="prix">700,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="helios.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Microsoft Surface Laptop 5</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\laptop5.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Microsoft Surface Laptop 5</h3>
+        <p class="prix">864,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="microsoft.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Microsoft Surface Pro 9</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\PRO9.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Microsoft Surface Pro 9</h3>
+        <p class="prix">1349,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="zennbook14.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>MSI GS66 Stealth</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\STEALTH.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>MSI GS66 Stealth</h3>
+        <p class="prix">1019,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="zennbook14.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>MSI GF63 Thin</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\THIN.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>MSI GF63 Thin</h3>
+        <p class="prix">960,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="zennbook14.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Samsung galaxy Book Pro</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\samm.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Samsung galaxy Book Pro</h3>
+        <p class="prix">569,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="zennbook14.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Samsung galaxy Book Flex</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\Book flex.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Samsung galaxy Book Flex</h3>
+        <p class="prix">1234,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="zennbook14.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Toshiba Dynabook Tecra</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\tosh.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Toshiba Dynabook Tecra</h3>
+        <p class="prix">400,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="zennbook14.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Fujitsu Lifebook U series</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\fuji.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Fujitsu Lifebook U series</h3>
+        <p class="prix">800,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="zennbook14.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Sony VAIO SX14</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\sonn.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Sony VAIO SX14</h3>
+        <p class="prix">900,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="zennbook14.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Razer Blade 15</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\razer.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Razer Blade 15</h3>
+        <p class="prix">1007,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="zennbook14.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Alienware m15 R7</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\alienn.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Alienware m15 R7</h3>
+        <p class="prix">1999,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="Alienwarem15.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Huawei MateBook X Pro</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\xpro.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Huawei MateBook X Pro</h3>
+        <p class="prix">440,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="Huaweim.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>LG Gram 17</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\gram.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>LG Gram 17</h3>
+        <p class="prix">543,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="LGgram.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Gigabyte Aero 15 </h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\gyy.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Gigabyte Aero 15</h3>
+        <p class="prix">876,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="Gigabyte.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Vaio Z</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\vvvaio.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Vaio Z</h3>
+        <p class="prix">654,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="Vaioz.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4> Panasonic Toughbook 55</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\panasonic.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Panasonic Toughbook 55</h3>
+        <p class="prix">789,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="Panasonicc.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Chuwi AeroBook plus</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\chuii.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Chuwi AeroBook plus</h3>
+        <p class="prix">765,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="chuwii.html">Details</a>
+          </button>
+      </div>
+    </div>
+    <div class="carte-produit">
+      <h4>Google Pixelbook Go</h4>
+      <img src="C:\Users\HP\Videos\Bureau\projet\google.jpeg" alt="HP 8723be">
+      <div class="infos-produit">
+        <h3>Google Pixelbook Go</h3>
+        <p class="prix">678,00 $</p>
+        <button class="btn-panier">Ajouter au panier🛒</button>
+        <button class="Details">
+          <a href="gooogle.html">Details</a>
+          </button>
+      </div>
+    </div>
+  </div>
+  
+<!-- Zone d'affichage du panier -->
+<div id="zone-panier">
+  <h2>Votre panier🛒</h2>
+  <ul id="liste-panier"></ul>
+  <p id="total-panier">Total : 0.00 $</p>
+  <button id="valider-panier">Valider la commande</button>
+</div>
+
+  <!-- Formulaire de livraison (caché au départ) -->
+  <div class="formulaire-livraison" id="formulaire-livraison" style="display: none;">
+    <h2>Formulaire de livraison</h2>
+   <form id="form-commande">
+  <label>Prénom *</label>
+  <input type="text" id="prenom" required>
+
+  <label>Nom *</label>
+  <input type="text" id="nom" required>
+
+  <label>Pays/région *</label>
+  <input type="text" id="pays" value="Congo (Kinshasa)" required>
+
+  <label>Adresse *</label>
+  <input type="text" id="adresse" required>
+
+  <label>Ville *</label>
+  <input type="text" id="ville" required>
+
+  <label>Téléphone *</label>
+  <input type="tel" id="telephone" required>
+
+  <label>Email *</label>
+  <input type="email" id="email" required>
+
+  <button type="submit">Envoyer la commande sur WhatsApp</button>
+</form>
+  </div>
+  <script src="Jsv.js"></script>
+</body>
+<a href="https://wa.me/243818540504" class="whatsapp-float" target="_blank" title="Contactez-nous sur WhatsApp">
+  <img src="float.jfif" alt="WhatsApp">
+</a>
+<footer>
+  <p>&copy; 2023 Boutique Ordi Pro. Tous droits réservés.</p>
+</html>

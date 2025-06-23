@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(lewa.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.logo-haut-gauche {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo-haut-gauche img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.hero-content span {
+  color: #1e68d6;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.btn {
+  background-color: #1e08e4;
+  color: black;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #ecf0f5;
+  color: rgb(10, 50, 224);
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  color: #ffffff;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: #25D366;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 40px;
+  height: 40px;
+}
+nav ul {
+  display: flex;
+  justify-content: right;
+  gap: 30px;
+  padding: 20px;
+  list-style: none;
+  margin: 0;
+
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+nav a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+nav a:hover {
+  color: rgb(112, 18, 236);
+}
