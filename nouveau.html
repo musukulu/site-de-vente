@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique Ordi Pro</title>
+  <link rel="stylesheet" href="nouvelle.css">
+  <script defer src="deux.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">ACCUEIL</a></li>
+        <li><a href="about.html">À PROPOS</a></li>
+        <li><a href="#" id="lien-panier">🛒 MON PANIER</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+    <h2>CHOISISSEZ VOTRE MARQUE ET ACHETEZ</h2>
+  </header>
+
+  <div class="catalogue" id="catalogue">
+    <div class="carte-produit">
+      <h4>Apple MacBook Air</h4>
+      <img src="envy 13.jpeg" alt="Apple MacBook Air">
+      <div class="infos-produit">
+        <h3>Apple MacBook Air</h3>
+        <p class="prix">400.00</p>
+        <button class="emoji-panier">🛒</button>
+        <button class="Details">
+          <a href="macbookairdetails.html">Détails</a>
+        </button>
+      </div>
+    </div>
+    <!-- Duplique la carte-produit ici pour d'autres ordinateurs -->
+  </div>
+
+  <!-- Zone Panier -->
+  <div class="zone-panier" id="zone-panier" style="display:none">
+    <h2>Votre Panier</h2>
+    <ul id="liste-panier"></ul>
+    <p id="total-panier">Total : 0.00 $</p>
+    <button id="btn-valider">Valider la commande</button>
+  </div>
+
+  <!-- Formulaire de Livraison -->
+  <div class="formulaire-livraison" id="formulaire-livraison" style="display: none;">
+    <h2>Formulaire de livraison</h2>
+    <form>
+      <label>Prénom *</label>
+      <input type="text" required>
+      <label>Nom *</label>
+      <input type="text" required>
+      <label>Pays/région *</label>
+      <input type="text" value="Congo (Kinshasa)" required>
+      <label>Adresse *</label>
+      <input type="text" required>
+      <label>Ville *</label>
+      <input type="text" required>
+      <label>Téléphone *</label>
+      <input type="tel" required>
+      <label>Email *</label>
+      <input type="email" required>
+      <button type="submit">Valider la commande</button>
+    </form>
+  </div>
+</body>
+</html>

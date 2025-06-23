@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #000000;
+  color: #f4f3f8;
+  opacity: 0;
+  transform: translateX(-300px);
+  animation: slideFade 2.0s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes slideFade {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+
+}
+
+header {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  color: #f4f7fa;
+}
+
+
+
+nav ul {
+  display: flex;
+  justify-content: right;
+  gap: 30px;
+  padding: 20px;
+  list-style: none;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #faf5f5;
+  font-weight: bold;
+}
+.btn{
+  background-color: #3910df;
+  color: #111;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.text-container {
+  max-width: 500px;
+}
+
+.text-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.text-container p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.text-container button {
+  background-color: #111;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.image-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+}
+.main-image:hover { 
+  transform: rotate(5deg);
+  transition: transform 0.3s;
+
+}
+.small-images:hover {
+ transform: translateY(-10px);
+  transition: transform 0.3s;
+
+}
+
+.main-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.small-images {
+  display: flex;
+  gap: 15px;
+}
+
+.small-images img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 8px;
+}
+
+/* Responsive pour téléphones */
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .small-images {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .small-images img {
+    max-width: 100px;
+  }
+
+  .text-container h1 {
+    font-size: 28px;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+nav a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #fdfcfc;
+  font-weight: bold;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+nav a:hover {
+  color: rgb(112, 18, 236);
+}
