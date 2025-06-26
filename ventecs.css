@@ -73,14 +73,11 @@ body {
   width: 100%;
   padding: 10px;
   text-align: center;
-  transform: translateY(100%);
-  transition: transform 0.3s ease;
+  
   
 }
 
-.carte-produit:hover .infos-produit {
-  transform: translateY(0);
-}
+
 
 .infos-produit h3 {
   margin: 5px 5px;
