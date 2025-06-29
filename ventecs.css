@@ -4,6 +4,7 @@ body {
   font-size: 16px;
   margin: 0;
   background-image: url(lewa.jpg);
+  background-size: cover;
   margin-left: 20px;
   margin-right: 20px;
   color: #ffffff;
