@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url(lewa.jpg);
+  background-color: black;
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -24,7 +24,7 @@ body {
 }
 
 .logo-haut-gauche img {
-  width: 100px;
+  width: 150px;
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
