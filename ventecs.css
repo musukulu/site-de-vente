@@ -128,10 +128,6 @@ body {
   padding: 15px;
   font-size: 16px;
 }
-
-.formulaire-livraison button:hover {
-  background: #0056b3;
-}
 header {
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   color: #fff;
