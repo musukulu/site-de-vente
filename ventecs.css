@@ -92,21 +92,6 @@ body {
   font-weight: bold;
 }
 
-/* Bouton acheter */
-.btn-acheter {
-  background: #0212f1;
-  border: none;
-  color: #fff;
-  padding: 8px 15px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.btn-acheter:hover {
-  background:#0212f1;
-}
-
 /* Formulaire de livraison */
 .formulaire-livraison {
   background: #a89898;
